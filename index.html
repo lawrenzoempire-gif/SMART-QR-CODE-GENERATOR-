@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart QR Code generator</title>
+    <script src="http://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card ">
+
+        <h2>Smart QR Code generator</h2>
+
+        <p>Turn any link into a QR code</p>
+
+        <input type="url" id="link" placeholder="http://example.com">
+
+        <button onclick="genarateQR()">Generate QR Code</button>
+
+        <div id="qrcode"></div>
+        <button id="download" onclick="downloadQR() ">Download QR Code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

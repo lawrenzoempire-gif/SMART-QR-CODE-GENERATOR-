@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+}
+.card{
+    width: 360px;
+    padding: 30px;
+    margin-top: 2rem;
+    text-align: center;
+    background: #ffa500;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px #0005;
+}
+h2{
+    margin-bottom: 8px;
+}
+p{
+    color: #000000;
+    margin-bottom: 25px;
+}
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+button{
+    width: 100%;
+    padding-bottom: 13px;
+    margin-top: 12px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background: #111;
+    color: #fff;
+}
+#qrcode{
+    margin: 25px auto 10px;
+    width: fit-content;
+}
+#download {
+    display: none;
+    background: #008000;
+}
