@@ -1,32 +1,36 @@
-function genarateQR(){
-    const link = document.
-    getElementById("link").value;
+function generateQR() {
+    const link = document.getElementById("link").value;
+    const qr = document.getElementById("qrcode");
+    const download = document.getElementById("download");
 
-    const qr = document.
-    getElementById("qrcode");
+    if (!link) {
+        alert("Enter a link first");
+        return;
+    }
 
-    const download = document.
-    getElementById("download");
+    qr.innerHTML = "";
+    qr.className = "show";
 
-    if (!link) return alert("Enter a link first");
+    new QRCode(qr, {
+        text: link,
+        width: 200,
+        height: 200
+    });
 
-    qr.innerHTML ="";
-    qr.className ="show";
-
-    new QRCode(qr, link);
-
-    download.style.display ="block"
+    download.style.display = "block";
 }
 
 function downloadQR() {
-    const img = document.
-    querySelector("#qrcode img");
+    const img = document.querySelector("#qrcode img");
 
-    const link = document.
-    createElement ("a");
+    if (!img) {
+        alert("Generate a QR code first");
+        return;
+    }
 
-    link. href =img.src;
+    const link = document.createElement("a");
+
+    link.href = img.src;
     link.download = "qrcode.png";
     link.click();
-
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart QR Code generator</title>
     <script src="http://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card ">
@@ -14,13 +14,14 @@
 
         <p>Turn any link into a QR code</p>
 
-        <input type="url" id="link" placeholder="http://example.com">
+        <input type="text" id="link" placeholder="Enter your link">
 
-        <button onclick="genarateQR()">Generate QR Code</button>
-
+        <button onclick="generateQR()">Generate QR Code</button>
         <div id="qrcode"></div>
-        <button id="download" onclick="downloadQR() ">Download QR Code</button>
+        <button id="download" onclick="downloadQR()">Download QR Code</button>
     </div>
-    <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
